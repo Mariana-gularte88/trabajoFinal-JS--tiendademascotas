@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnos</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+</head>
+<body class="fondoTurnos">
+<header>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a href="./index.html"class="logo">
+                <img src="./img/3patitas-logo.jpg" alt="logo"class="logo" >
+              </a>
+              
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./gatos.html">Gatos</a>
+                    </li>
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./turnos.html">Turnos</a>
+                    </li>
+                  
+               
+                </form>
+              </div>
+            </div>
+          </nav>
+      </div>
+</header>    
+ <main>
+
+  <h1>Pedi Turno con Nuestros Profesionales</h1>
+    <form id="formulario">
+      <label for="nombre">Nombre del Cliente: </label>
+      <input id="nombre" type="text" />
+      <br /><br />
+
+      <label for="apellido">Apellido del Cliente</label>
+      <input id="apellido" type="text" />
+      <br /><br />
+
+      <label for="email">email</label>
+      <input id="email" type="text" />
+      <br /><br />
+
+      <label for="servicio">servicio: </label>
+      <select name="servicio" id="servicio">
+        <option value="veterinario">Veterinario</option>
+        <option value="peluqueria canina">Peluqueria Canina</option>
+        <option value="baño">Baño</option>
+      </select>
+      <button>Reservar</button>
+    </form>
+
+    <h2>Ver Turnos:</h2>
+    <br /><br />
+    <button id="verTurnos">Ver Turno</button>
+    <div id="contenedorTurnos"></div>
+
+ </main>
+
+ <aside>
+  <h2>Consejos para mantener sanas a tus mascotas</h2>
+  <h3>Baño</h3>
+  <img src="./img/banar_a_mi_perro.jpg" alt="">
+  <p class="parrafoConsejos">Bañar a tu mascota es importante para su salud y bienestar. Existen champús especiales para este fin, pero también puedes utilizar un jabón suave y agua tibia. Debes hacerlo al menos una vez al mes.</p>
+
+  <h3>Pelaje</h3>
+    <img src="./img/peluqueria-canina.jpg" alt="">
+    <p class="parrafoConsejos">
+      El pelaje de su mascota es una de sus características más importantes, y también merece ser cuidado. Encuentra el cepillo adecuado para el pelaje de tu mascota. Elimina el pelo muerto y mejora el estado de la piel.
+    </p>
+
+  <h3>Corte de Uñas</h3>  
+  <img src="./img/corte-de-uñas.jpg" alt="uñas">
+  <p class="parrafoConsejos">Cortar las uñas puede ser una molestia, pero es importante hacerlo con regularidad. Nuestros cortaúñas especialmente diseñados por expertos líderes en el cuidado de perros garantizan un procedimiento seguro y sin dolor en todo momento.</p>
+  
+  <h3>Limpieza Dental</h3>
+  <img src="./img/limpieza-dental.jpg" alt="dientes">
+  <p class="parrafoConsejos">Una boca limpia es una mascota feliz. Cepille los dientes regularmente con un cepillo de cerdas suaves. A su mascota le gustará el contacto y la atención suave, y le ayudará a eliminar la placa y el sarro que pueden causar enfermedades dentales.</p>
+
+  <h3>Hora de dormir</h3>
+  <img src="./img/hora-de-dormir-perro.jpg" alt="dormir">
+  <p class="parrafoConsejos"> El lugar donde duerme una mascota debe ser lo más cómodo posible. Así dormirá lo suficiente, aunque tenga mucha energía y le guste jugar. También es una buena idea limpiar la zona de descanso con regularidad para que las pulgas no se desarrollen allí.</p>
+
+  <h3>Vacunas</h3>
+  <img src="./img/perro-vacuna.jpg" alt="vacunas">
+  <h3>Calendario de Vacunas para Perros</h3>
+  
+    <ul class="listaVacunas">
+   <li> A las 6 semanas de vida: se aplica la primovacunación o primera vacuna polivalente (séxtuple).</li>
+   <li> A las 8 semanas de vida: segunda dosis de polivalente, que combate el adenovirus, el moquillo, la parainfluenza y el parvovirus.</li>
+   <li> A las 12 semanas de vida: refuerzo de la polivalente.</li>
+   <li> A las 16 semanas de vida: contra la rabia.</li>
+    <li> Al año: refuerzo de la polivalente y de la vacuna contra la rabia.</li>
+  </ul>
+  </p>
+
+  <h3>Calendario de vacunas para Gatos</h3>  
+  <ul class="listaVacunas">
+   <li> A los 8 semanas de vida. Triple felina, que protege contra la rinotraqueitis viral felina, el calicivirus felino y la panceleucopenia felina (moquillo), enfermedades que implican un riesgo alto de mortalidad. Además, es necesario aplicar un refuerzo a los 3 meses de vida.</li>
+   <li> A los 4 meses la primera inoculación es de vida, mientras que luego se debe repetir una vez por año. Es obligatoria la vacuna contra la rabia. </li>
+  <li> También se recomienda realizar una desparasitación interna y/o externa desde los 21 días y cada seis meses.</li> 
+    
+  </ul>
+  
+
+  
+ </aside>
+
+ <footer class="footer">
+  <p> <b> Nuestras Tiendas </b>
+   Av. Córdoba 1475 - CABA
+   Av. Córdoba 1557 - CABA
+  <b> Nuestros Teléfonos </b>
+   +54 11 5365-5101
+   +54 11 4815-1788
+  <b> Ventas Online y Envíos </b>
+   +54 11 5323-1453
+  <b>Horarios</b>
+   lunes	08:00–22:00
+   martes	08:00–22:00
+   miércoles	08:00–22:00
+   jueves	08:00–22:00
+   viernes	08:00–22:00
+   sábado	09:00–13:00
+   domingo Cerrado
+  </p>
+
+ </footer>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+  <script src="./script/turnos.js"></script>
+
+</body>

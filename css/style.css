@@ -1,0 +1,70 @@
+* {
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.fondoPerro {
+  background-image: url(../img/fondo-perro.jpg) ;
+  background-size: cover;
+}  
+
+.fondoTurnos {
+    background-image:url(../img/fondo-perro-gato-turnos.jpg.jpg);
+    background-size: cover;
+}
+
+.fondoGatos {
+  background-image: url(../img/fondo-gatos.jpg);
+  background-size: cover;
+}
+
+
+/* .tamaño{
+  width: 500px;
+  height: 500px; ;
+} */
+.salidasPerros{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.cafePerros {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+
+.parrafoIndex {
+font-size: 30px;
+}
+
+.footer{
+  background-color: white;
+
+}
+
+.parrafoConsejos {
+  font-size: 30px;
+  background-color: aquamarine;
+}
+
+.listaVacunas {
+  font-size: 30px;
+  background-color: aquamarine;
+}
+
+.refugios{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.gatos{
+  display: flex;
+  flex-direction: row;
+  
+}

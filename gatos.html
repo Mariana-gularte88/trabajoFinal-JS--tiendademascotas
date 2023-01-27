@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatos</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+</head>
+<body class="fondoGatos">
+ <header>
+
+    <div>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a href="./index.html"class="logo">
+                <img src="./img/3patitas-logo.jpg" alt="logo"class="logo" >
+            </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./gatos.html">Gatos</a>
+                  </li>
+                
+                  
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./turnos.html">Turnos</a>
+                      </li>
+              
+                </ul>
+                 <form class="d-flex" role="search">
+                  <input id="input-search-gato" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+    </header>
+
+    <h1>Productos</h1>
+    
+    <div id="contenedorGato" class="d-flex flex-wrap gap-2"></div>
+
+    <!-- 
+     <div class="modal" tabindex="-1"> -->
+      
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Usted Compro:</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Carrito</p>
+        <div id="contenedor-carrito">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody id="contenedor-carrito">
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        
+      </div>
+    </div>
+  </div>
+</div> 
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Carrito
+</button>
+
+<aside>
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner" >
+      <div class="carousel-item active">
+        <img src="./img/fotogato1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/fotogato2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/fotogato3.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/fotogato4.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/fotogato5.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/fotogato6.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/fotogato7.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</aside>
+
+
+<div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Cuidados para un gato saludable</h5>
+       <p class="card-text">
+        <img src="./img/signos-de-un-gato-saludable.jpg" class="card-img-top" alt="gatoSaludable">
+        <ul>
+          <li> Alimentación. Siempre de calidad y adaptada a sus etapas de vida. </li>
+          <li> Agua. Limpia, en abundancia e idealmente servida en bebederos de acero inoxidable o aluminio. </li> 
+          <li> Mantenimiento óptimo del arenero. </li>
+          <li> Uñas y patas. </li>
+          <li>  Ejercítalo mediante el juego. </li>
+          <li> El cepillado. </li>
+          <li> Visitas periódicas al veterinario.</l>
+        </ul>
+       </p>
+     
+      </div>
+    </div>
+  </div>
+  
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"> Datos curiosos </h5>
+          
+          <p class="card-text">
+            <img src="./img/datosCuriosos.jpg" class="card-img-top" alt="datos curiosos">
+          <ul> 
+            <li>Los gatos pueden rotar sus orejas 180 grados.</li>
+            <li> Los gatos pueden pasar hasta 14 horas dormidos.</li>
+             <li>Debido a su naturaleza nocturna, los gatos suelen ser mucho más hiperactivos en la tarde.</li> 
+             <li> La audición del gato promedio es al menos cinco veces más aguda que la de un adulto humano.</li>  
+          </ul></p>
+          
+        </div>
+  </div>
+</div>
+
+
+<footer class="footer">
+  <p> <b> Nuestras Tiendas </b>
+   Av. Córdoba 1475 - CABA
+   Av. Córdoba 1557 - CABA
+  <b> Nuestros Teléfonos </b>
+   +54 11 5365-5101
+   +54 11 4815-1788
+  <b> Ventas Online y Envíos </b>
+   +54 11 5323-1453
+  <b>Horarios</b>
+   lunes	08:00–22:00
+   martes	08:00–22:00
+   miércoles	08:00–22:00
+   jueves	08:00–22:00
+   viernes	08:00–22:00
+   sábado	09:00–13:00
+   domingo Cerrado
+  </p>
+
+ </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="./script/gatos.js"></script>
+</body>
+</html>
